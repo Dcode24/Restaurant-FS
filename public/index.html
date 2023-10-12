@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>African Restaurant</title>
+    <!-- Google Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alumni+Sans">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top opacity-hover-off" id="myNavbar">
+        <div class="container-fluid">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="font-size: 2rem;">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#menu" style="font-size: 2rem;">MENU</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about" style="font-size: 2rem;">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact" style="font-size: 2rem;">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--Header with image-->
+    <header class="bg-img d-flex flex-column justify-content-between" id="home">
+        <div></div>
+        <div class="d-flex flex-column text-center">
+            <span class="display-1">AUTHENTIC<br>NIGERIAN FOOD</span>
+            <p><a href="#menu" class="btn btn-lg btn-dark hover-btn fs-2">Check Out Our Menu</a></p>
+        </div>
+        <div class="d-flex">
+            <span class="bg-dark text-white p-3 h2">Open from 2pm to 2am - Call +44 746 332 3343</span>
+        </div>
+    </header>
+
+    <!--Menu Container-->
+    <div class="container-fluid bg-black text-white py-5" display-4 id="menu">
+        <div class="container">
+            <h1 class="text-center display-2 mb-5">OUR MENU</h1>
+            <div class="text-center border border-dark">
+                <div class="d-flex">
+                    <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');" class="col-4 tablink p-3 hover-red" id="mainLink">Starter</a>
+                    <a href="javascript:void(0)" onclick="openMenu(event, 'Traditional');" class="col-4 tablink p-3 hover-red">Traditional Dishes</a>
+                    <a href="javascript:void(0)" onclick="openMenu(event, 'Rice');" class="col-4 tablink p-3 hover-red">Rice Dishes</a>
+                </div>
+            </div>
+            
+            <!--Starter Menu-->
+            <div id="Starter" class="container-fluid menu p-4 bg-white">
+                <!-- Suya -->
+                <div class="d-flex justify-content-between align-items baseline">
+                    <h1 class="mb-0 display-3"><b>Suya</b></h1>
+                    <span class="badge bg-dark text-white">£12.50</span>
+                </div>
+                <p class="text-muted">Fresh beef, marinated with red peppers, fresh onions</p>
+                <hr class="text-muted">
+                <!-- Gizdodo -->
+                <div class="d-flex justify-content-between align-items baseline">
+                    <h1 class="mb-0 display-3"><b>Giz dodo</b></h1>
+                    <span class="badge bg-dark text-white">£8.50</span>
+                </div>
+                <p class="text-muted">Fresh gizzard, marinated with red peppers, fresh onions and fresh plantain</p>
+                <hr class="text-muted">
+                <!-- Meat Pie -->
+                <div class="d-flex justify-content-between align-items baseline">
+                    <h1 class="mb-0 display-3"><b>Meat Pie</b></h1>
+                    <span class="badge bg-dark text-white">£3.00</span>
+                </div>
+                <p class="text-muted">Fresh beef mince with onions and peppers, baked in a pie.</p>
+                <hr class="text-muted">
+                <!-- Puff Puff -->
+                <div class="d-flex justify-content-between align-items baseline">
+                    <h1 class="mb-0 display-3"><b>Puff Pufff</b></h1>
+                    <span class="badge bg-dark text-white">£2.50</span>
+                </div>
+                <p class="text-muted">Delicious West African Doughnut Pastery</p>
+                <hr class="text-muted">
+            </div>
+
+            <!--Traditinal Dishes Menu-->
+            <div id="Traditional" class="container-fluid menu p-4 bg-white">
+                <!-- Pounded Yam & Egusi -->
+                <div class="d-flex justify-content-between align-items baseline">
+                    <h1 class="mb-0 display-3"><b>Pounded Yam & Egusi</b></h1>
+                    <span class="badge bg-dark text-white">£14.50</span>
+                </div>
+                <p class="text-muted">Freshly Pounded Yam, Egusi stew, Beef</p>
+                <hr class="text-muted">
+                <!-- Eba & Efo riro -->
+                <div class="d-flex justify-content-between align-items baseline">
+                    <h1 class="mb-0 display-3"><b>Eba & Efo riro</b></h1>
+                    <span class="badge bg-dark text-white">£14.50</span>
+                </div>
+                <p class="text-muted">Fresh Eba with delicious Efo riro stew</p>
+                <hr class="text-muted">
+                <!-- Amala & Gbegiri -->
+                <div class="d-flex justify-content-between align-items baseline">
+                    <h1 class="mb-0 display-3"><b>Amala & Gbegiri</b></h1>
+                    <span class="badge bg-dark text-white">£15.00</span>
+                </div>
+                <p class="text-muted">Freshly pounded amala with tasty Gbegiri stew & beef</p>
+                <hr class="text-muted">
+                <!-- Asaro -->
+                <div class="d-flex justify-content-between align-items baseline">
+                    <h1 class="mb-0 display-3"><b>Asaro</b></h1>
+                    <span class="badge bg-dark text-white">£15.00</span>
+                </div>
+                <p class="text-muted">Yam porridge with assorted meat</p>
+                <hr class="text-muted">
+                
+            </div>
+
+            <!--Rice Menu-->
+            <div id="Rice" class="container-fluid menu p-4 bg-white">
+                <!-- Jollof Rice -->
+                <div class="d-flex justify-content-between align-items baseline">
+                    <h1 class="mb-0 display-3"><b>Jollof Rice </b><span class="badge bg-grey small-tag">popular</span></h1>
+                    <span class="badge bg-dark text-white">£14.50</span>
+                </div>
+                <p class="text-muted">Jollof Rice & Plantain</p>
+                <hr class="text-muted">
+                <!-- Fried Rice -->
+                <div class="d-flex justify-content-between align-items baseline">
+                    <h1 class="mb-0 display-3"><b>Fried Rice </b><span class="badge bg-grey small-tag">Spicy</span></h1>
+                    <span class="badge bg-dark text-white">£14.50</span>
+                </div>
+                <p class="text-muted">Fried Rice & Plantain</p>
+                <hr class="text-muted">
+                <!-- Special Rice -->
+                <div class="d-flex justify-content-between align-items baseline">
+                    <h1 class="mb-0 display-3"><b>Special Rice </b><span class="badge bg-grey small-tag">New</span></h1>
+                    <span class="badge bg-dark text-white">£14.50</span>
+                </div>
+                <p class="text-muted">Jollof Rice mixed with Fried Rice Plantain</p>
+                <hr class="text-muted">
+                <!-- Jollof Rice -->
+                <div class="d-flex justify-content-between align-items baseline">
+                    <h1 class="mb-0 display-3"><b>Rice & Stew</b></h1>
+                    <span class="badge bg-dark text-white">£14.50</span>
+                </div>
+                <p class="text-muted">White Rice & Stew with plantain</p>
+                <hr class="text-muted">
+            </div>
+            
+        </div>
+    </div>
+
+    <!--About Container-->
+    <div class="container-fluid py-5 text-white" style="background-color: brown;" id="about">
+        <div class="container">
+            <h1 class="text-center display-2 mb-3">ABOUT</h1>
+            <h2 class="display-4"><b>Opening Hours</b></h1>
+            <div class="row fs-2">
+                <div class="col-6">
+                    <p>Mon & Tues CLOSED</p>
+                    <p>Wednesday 2pm - 2am</p>
+                    <p>Thursday 2pm - 2am</p>
+                </div>
+                <div class="col-6">
+                    <p>Friday 2pm - 2am</p>
+                    <p>Saturday 2pm - 2am</p>
+                    <p>Sunday 2pm - 2am</p>
+                </div>
+            </div>
+
+            <h1 class="display-4"><b>History</b></h1>
+            <p class="fs-2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh sed pulvinar proin gravida hendrerit lectus a. Feugiat sed lectus vestibulum mattis ullamcorper. Imperdiet nulla malesuada pellentesque elit eget gravida. Ut etiam sit amet nisl purus in mollis nunc sed. Integer malesuada nunc vel risus commodo viverra. Ac auctor augue mauris augue neque gravida in. Sed felis eget velit aliquet sagittis id consectetur purus. Condimentum lacinia quis vel eros donec ac odio tempor. Convallis aenean et tortor at. Nec ultrices dui sapien eget. Porttitor massa id neque aliquam vestibulum morbi blandit cursus. Amet dictum sit amet justo.
+            </p>
+            <div class="row">
+                <div class="col-lg-9 col-md-8 col-sm-12">
+                    <p class="fs-2"><b>The Chef?</b> Mrs. Taiwo herself. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh sed pulvinar proin gravida hendrerit lectus a. Feugiat sed lectus vestibulum mattis ullamcorper. Imperdiet nulla malesuada pellentesque elit eget gravida. Ut etiam sit amet nisl purus in mollis nunc sed..</p>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-12 text-end">
+                    <img src="assets/chef.jpg" alt="chef" style="width: 200px;" class="rounded-circle">
+                </div>
+            </div>
+            <p class="fs-2">We are proud of our stuff.</p>
+            <img src="assets/restaurant.jpg" alt="restaurant" style="width: 100%;" class="my-3 img-greyscale">
+        </div>
+    </div>
+
+    <!--Contact-->
+
+    <h1 class="container-fluid bg-black text-white py-5 fs-2" id="contact">
+        <div class="container">
+            <h1 class="text-center display-2 mb-5">CONTACT</h1>
+            <p>Find us at some address at some place or call us at 07933402445</p>
+            <p>
+                <span class="badge bg-dark">FYI!</span>
+                We offer full-service catering for any event, large or small. We understand your needs and will cater the food to satisfy the biggest criteria of them all, both look and taste.
+            </p>
+            <p><b>Reserve</b> a table, ask for today's special or just send us a message:</p>
+            <form action="/submit" method="post">
+            <div class="mb-3">
+                <input type="text" class="form-control extra-large" placeholder="Name"  required name="Name">
+            </div>
+            <div class="mb-3">
+                <input type="number" class="form-control extra-large" placeholder="How Many People" required name="People" >
+            </div>
+            <div class="mb-3">
+                <input type="datetime-local" class="form-control extra-large" placeholder="Date and Time"  required name="date" value=date.now()>
+            </div>
+            <div class="mb-3">
+                <input type="text" class="form-control extra-large" placeholder="Message \ Special requirements"  required name="Message">
+            </div>
+            <div class="mb-3">
+                <button type="submit" class="btn btn-light btn-lg btn-block fs-2">SEND MESSAGE</button>
+            </div>
+            </form>
+        </div>
+
+        <footer class="text-center bg-dark text-white py-4">
+            <p class="fs-3 mb-0">
+                <p class="fs-3">Built Bootstrap & CSS by Daniel</p>
+            </p>
+        </footer>
+    </h1>
+    <script src="script.js"></script>
+</body>
+</html>
